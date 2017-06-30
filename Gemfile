@@ -34,6 +34,8 @@ gem "jbuilder", "~> 2.5"
 # gem "capistrano-rails", group: :development
 gem "listen", ">= 3.0.5", "< 3.2"
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 group :development, :test do
   # Debug
   gem "pry-rails"
