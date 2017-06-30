@@ -1,0 +1,10 @@
+machine:
+  ruby:
+    version: 2.4.0
+dependencies:
+  override:
+    - mv config/secrets.ci.yml config/secrets.yml
+    - cp config/database.yml.ci config/database.yml
+    - bundle exec rake db:create db:schema:load
+
+
