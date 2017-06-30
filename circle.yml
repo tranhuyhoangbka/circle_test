@@ -2,9 +2,6 @@ machine:
   ruby:
     version: 2.4.0
 dependencies:
-  pre:
-    - gem uninstall bundler
-    - gem install bundler --pre
   override:
     - bundle install:
         timeout: 180
