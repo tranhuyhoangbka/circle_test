@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "~> 5.1.1"
+gem "rails", "5.1.0"
 # Use mysql as the database for Active Record
 gem "mysql2", ">= 0.3.18", "< 0.5"
 # Use Puma as the app server
@@ -20,11 +20,6 @@ gem "uglifier", ">= 1.3.0"
 # gem "therubyracer", platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem "coffee-rails", "~> 4.2"
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem "turbolinks", "~> 5"
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.5"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 3.0"
 # Use ActiveModel has_secure_password
@@ -32,9 +27,8 @@ gem "jbuilder", "~> 2.5"
 
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
-gem "listen", ">= 3.0.5", "< 3.2"
+gem "listen"
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   # Debug
@@ -48,11 +42,6 @@ group :development do
   gem "rubocop", "~> 0.40.0", require: false
   gem "brakeman"
   gem "bundler-audit", "~> 0.4.0"
-  gem "awesome_print"
-  gem "hirb"
-  gem "web-console", ">= 3.3.0"
-  gem "spring"
-  gem "spring-watcher-listen", "~> 2.0.0"
 end
 
 group :test do
